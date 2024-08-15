@@ -7,7 +7,7 @@ var qs = require('querystring');
 function postRequest(options, body) {
     return new Promise((resolve, reject) => {
         const req = https.request(options, res => {
-            let rawData = 'another test';
+            let rawData = 'another feature test';
 
             res.on('data', chunk => {
                 rawData += chunk;
